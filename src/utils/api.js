@@ -40,3 +40,60 @@ axiso.interceptors.response.use(
 
 /*使用axios封装请求方法 */
 
+/**
+ * Get请求
+ * @param url
+ * @param params
+ * @returns {AxiosPromise}
+ */
+export const getRequest=(url,params)=>{
+    return axiso({
+        method:"get",
+        url:url,
+        data:params
+    })
+}
+
+/**
+ * Put请求
+ * @param url
+ * @param params
+ * @returns {AxiosPromise}
+ */
+export const putRequest=(url,params)=>{
+    return axiso({
+        method:"put",
+        url:url,
+        data:params
+    })
+}
+
+
+/**
+ *Delete请求
+ * @param url
+ * @param params
+ * @returns {AxiosPromise}
+ */
+export const deleteRequest=(url,params)=>{
+    return axiso({
+        method:"put",
+        url:url,
+        data:params
+    })
+}
+
+
+/**
+ *Post请求
+ * @param url
+ * @param params
+ * @returns {AxiosPromise}
+ */
+export const postRequest=(url,params)=>{
+    return axiso({
+        method:"put",
+        url:url,
+        data:params
+    })
+}

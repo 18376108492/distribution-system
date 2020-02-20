@@ -4,11 +4,17 @@ import router from './router'
 import store from './store'
 import ElementUI from 'element-ui'
 
-
+import {getRequest} from './utils/api.js'
+import {putRequest} from './utils/api.js'
+import {deleteRequest} from './utils/api.js'
+import {postRequest} from './utils/api.js'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
-
+Vue.prototype.getRequest=getRequest
+Vue.prototype.putRequest=putRequest
+Vue.prototype.deleteRequest=deleteRequest
+Vue.prototype.postRequest=postRequest
 
 
 new Vue({
